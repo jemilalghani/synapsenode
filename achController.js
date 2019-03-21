@@ -16,7 +16,7 @@ module.exports = {
           .then(({ data }) => {
             res.send(data);
           })
-          .catch(err => console.log("here", err));
+          .catch(err => console.log("hereOne", err));
       })
       .catch(err => {
         console.log("creatnode err", err);
@@ -31,10 +31,10 @@ module.exports = {
           .then(({ data }) => {
             res.send(data);
           })
-          .catch(err => console.log("here", err));
+          .catch(err => console.log("hereTwo", err));
       })
       .catch(err => {
-        console.log("creatnode err", err);
+        console.log("getallnodes err", err);
       });
   },
   getUserTransactions: (req, res) => {
@@ -46,10 +46,10 @@ module.exports = {
           .then(({ data }) => {
             res.send(data);
           })
-          .catch(err => console.log("here", err));
+          .catch(err => console.log("hereThree", err));
       })
       .catch(err => {
-        console.log("creatnode err", err);
+        console.log("getusertrans err", err);
       });
   },
   createTransaction: (req, res) => {
@@ -74,10 +74,10 @@ module.exports = {
           .then(({ data }) => {
             res.send(data);
           })
-          .catch(err => console.log("here", err));
+          .catch(err => console.log("hereFour", err));
       })
       .catch(err => {
-        console.log("creatnode err", err);
+        console.log("creattrans err", err);
       });
   }
 };

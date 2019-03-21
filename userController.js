@@ -3,7 +3,6 @@ const client = synapse.client;
 
 module.exports = {
   createUsers: (req, res) => {
-    console.log(req.body);
     const payload = {
       logins: [
         {
@@ -67,7 +66,6 @@ module.exports = {
       })
       .catch(err => {
         console.log("Create User Error: ", err);
-        res.status(500).json("create user error");
       });
   },
   getUser: (req, res) => {
@@ -81,11 +79,9 @@ module.exports = {
       })
       .catch(err => {
         console.err("Get User Error: ", err);
-        res.status(500).json("get user error");
       });
   },
   getAllUser: (req, res) => {
-    console.log(req.query);
     client
       .getAllUsers(req.query)
       .then(response => {
@@ -93,7 +89,6 @@ module.exports = {
       })
       .catch(err => {
         console.log("Get All User Error: ", err);
-        res.status(500).json("get all user error");
       });
   }
 };
