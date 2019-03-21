@@ -1,5 +1,7 @@
 # SynapseFi
 
+Check out the live version [here](https://synapse-dlezzsjjko.now.sh/)
+
 ## Using This Web Application
 
 1. fill in Login form with first and last Name, email and a phone number <br>
